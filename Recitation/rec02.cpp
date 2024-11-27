@@ -1,3 +1,8 @@
+/*
+  Emily Lopez
+  el4100
+  rec02.cpp
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
