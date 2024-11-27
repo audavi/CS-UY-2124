@@ -6,7 +6,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
-/*using namespace std;
+using namespace std;
 
 //function prototypes
 char decryptedChar(char letter, int rotation);
@@ -29,7 +29,7 @@ int main(){
         linesReversed.push_back(lines);
     }
     //Reverse the lines in the file
-    for (size_t i = linesReversed.size()-1; i >= 0; i--){
+    for (int i = linesReversed.size()-1; i >= 0; i--){
         cout << linesReversed[i] << endl;
     }
     //close file
@@ -40,11 +40,9 @@ int main(){
 /*Function 1: Returns the corresponding decrypted character
  Parameters: An encrypted character and rotation distance
  Returns corresponding decrypted character
-
+ */
 char decryptedChar(char encryptedChar, int rotation){
     //character literal is upper and is rotated
-
-    //homework deduction: should be usings chars instead of ASCII balues ("A" instead of 64)
     if (encryptedChar <= 90 && encryptedChar >= 65){
         encryptedChar -= rotation;
         //character literal was rotated but is now lowercase(> 90)
@@ -65,7 +63,7 @@ char decryptedChar(char encryptedChar, int rotation){
 /*Function 2: Modifies the string by using function 1 into an unencrypted form.
  Parameters: String of lines from file and rotation distance
  Does not return anything
-
+*/
 void modifyLine(string& str, int rotation){
     //for every charcter in the file, decrypt using the rotation
     for(size_t i = 0; i < str.size(); i++){
@@ -75,4 +73,3 @@ void modifyLine(string& str, int rotation){
 
     }
 }
-*/
