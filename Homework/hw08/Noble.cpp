@@ -133,7 +133,7 @@ namespace WarriorCraft {
     }
     // defend
     void Lord::defend() const {
-        for (Protector* currPtr : army) {
+        for (const Protector* currPtr : army) {
             currPtr->defend();
         }
     }
